@@ -31,8 +31,4 @@ func (b *Balance) Update() {
 	if err != nil {
 		panic(err)
 	}
-
-	if b.Success == false {
-		panic(err)
-	}
 }
