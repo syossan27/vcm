@@ -10,7 +10,7 @@ type XRP string
 func (x *XRP) UpdateRate(wg *sync.WaitGroup) {
 	defer wg.Done()
 
-	rate, err := api.FetchRate("xmr_jpy")
+	rate, err := api.FetchRate("xrp_jpy")
 	if err != nil {
 		panic(err)
 	}
